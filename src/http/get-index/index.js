@@ -1,12 +1,10 @@
-let arc = require('@architect/functions')
 let pageHTML = require('@architect/views/page-html')
 let contents = require('./_contents')
 
-function route(req, res) {
+exports.handler = async function route(req) {
   if (process.env.NODE_ENV !== 'production') console.log(req)
-  res({
-    html: pageHTML(contents)
-  })
+  return {
+    type: 'text/html; charset=utf8',
+    body: pageHTML(contents)
+  }
 }
-
-exports.handler = arc.http(route)
