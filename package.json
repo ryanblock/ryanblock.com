@@ -1,0 +1,34 @@
+{
+  "name": "ryanblock.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src --ignore-pattern node_modules --fix",
+    "start": "nodemon --exec npx sandbox"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@architect/architect": "^4.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "nodemon": "^1.18.6"
+  },
+  "nodemonConfig": {
+    "watch": [
+      ".arc",
+      "package.json",
+      "src/views"
+    ],
+    "ignore": [
+      "test",
+      "src/http"
+    ],
+    "events": {
+      "start": "npm run lint"
+    }
+  }
+}

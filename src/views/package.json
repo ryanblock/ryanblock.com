@@ -1,0 +1,6 @@
+{
+  "name": "ryanblock-views",
+  "dependencies": {
+    "clean-css": "^4.2.1"
+  }
+}
