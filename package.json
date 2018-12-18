@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@architect/architect": "^4.3.13"
+    "@architect/architect": "^4.4.9"
   },
   "devDependencies": {
     "eslint": "^5.9.0",

@@ -12,3 +12,7 @@ ryanblock.com
 get /
 get /robots.txt
 get /:page
+
+@static
+staging ryanblock.com-staging-static
+production ryanblock.com-static
