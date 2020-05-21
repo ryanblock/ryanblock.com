@@ -6,29 +6,13 @@
     "build": "./scripts/build.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --ignore-pattern node_modules --fix",
-    "start": "nodemon --exec npx sandbox"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@architect/architect": "^4.4.9"
+    "start": "npx sandbox"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "nodemon": "^1.18.6"
-  },
-  "nodemonConfig": {
-    "watch": [
-      ".arc",
-      "package.json",
-      "src/views"
-    ],
-    "ignore": [
-      "test",
-      "src/http"
-    ],
-    "events": {
-      "start": "npm run lint"
-    }
+    "@architect/architect": "^6.4.0",
+    "cssnano-cli": "^1.0.5",
+    "eslint": "^7.0.0",
+    "htmlprocessor": "^0.2.6",
+    "postcss-cli": "^7.1.1"
   }
 }
