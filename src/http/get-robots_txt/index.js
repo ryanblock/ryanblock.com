@@ -3,7 +3,9 @@ exports.handler = async function route() {
 
   if (env === 'production') {
     return {
-      type: 'text/plain; charset=utf8',
+      headers: {
+        'content-type': 'text/plain; charset=utf8'
+      },
       body:
 `User-agent: *
 Disallow: `
@@ -11,7 +13,9 @@ Disallow: `
   }
   else {
     return {
-      type: 'text/plain; charset=utf8',
+      headers: {
+        'content-type': 'text/plain; charset=utf8'
+      },
       body:
 `User-agent: *
 Disallow: /`
