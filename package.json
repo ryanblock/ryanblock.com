@@ -2,7 +2,7 @@
   "name": "ryanblock.com",
   "version": "1.0.0",
   "scripts": {
-    "//build": "./scripts/static-site-generator",
+    "build": "./scripts/static-site-generator",
     "lint": "eslint . --fix",
     "start": "npx sandbox"
   },
