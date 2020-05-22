@@ -26,8 +26,8 @@ module.exports = function pageBody (params) {
     <meta property="og:site_name" content="Ryan Block">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/ryanblock.com-static/img/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="https://s3-us-west-1.amazonaws.com/ryanblock.com-static/img/favicon.ico">
+    <link rel="shortcut icon" href="/_static/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/_static/favicon.ico">
     <!-- <link rel="apple-touch-icon" href="icon.png"> -->
 
     <!-- Apple layout stuff -->
