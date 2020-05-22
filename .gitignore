@@ -1,5 +1,5 @@
-*legacy*
 .DS_Store
-.node_modules
 .tmp
-scripts
+*legacy*
+node_modules
+public/index.html

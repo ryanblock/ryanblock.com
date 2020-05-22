@@ -1,15 +1,13 @@
-let css = require('./page-css')
-let js = require('./page-js')
+module.exports = function pageBody (params) {
+  let { css, content, scripts } = params
 
-module.exports = function pageBody(contents) {
-  contents = contents || {}
   return `<!doctype html>
 <html class="no-js" lang="en">
   <head>
-    
+
     <title>Ryan Block</title>
     <meta name="description" content="I (help) build things.">
-    <meta name="viewport" content="width=device-width, 
+    <meta name="viewport" content="width=device-width,
     initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -49,11 +47,11 @@ module.exports = function pageBody(contents) {
 
     <div class="everything">
       <div class="contents">
-        ${contents}
+        ${content}
       </div>
     </div>
 
-    ${js}
+    ${scripts}
   </body>
 </html>
 `

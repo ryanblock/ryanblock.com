@@ -1,0 +1,13 @@
+#! /usr/bin/env node
+
+let { writeFileSync } = require('fs')
+let { join } = require('path')
+
+let page =    require('../src/site/page')
+let content = require('../src/site/content')
+let css =     require('../src/site/css')
+let scripts = require('../src/site/scripts')
+
+// lol
+let theWholeEntireWebPage = page({ content, css, scripts})
+writeFileSync(join(__dirname, '..', 'public', 'index.html'), theWholeEntireWebPage)

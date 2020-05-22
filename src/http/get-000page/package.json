@@ -1,7 +1,0 @@
-{
-  "name": "ryanblock-get-000page",
-  "dependencies": {
-    "@architect/data": "^2.0.8",
-    "@architect/functions": "^1.9.12"
-  }
-}
