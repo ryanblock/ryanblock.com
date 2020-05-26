@@ -4,7 +4,7 @@
   "scripts": {
     "build": "./scripts/static-site-generator",
     "lint": "eslint . --fix",
-    "start": "npx sandbox"
+    "start": "PORT=4444 npx sandbox"
   },
   "devDependencies": {
     "@architect/sandbox": "^1.10.0",

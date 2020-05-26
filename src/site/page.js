@@ -1,16 +1,18 @@
 module.exports = function pageBody (params) {
-  let { css, content, scripts } = params
+  let { content, scripts } = params
 
   return `<!doctype html>
 <html class="no-js" lang="en">
   <head>
 
     <title>Ryan Block</title>
-    <meta name="description" content="I (help) build things.">
+    <meta name="description" content="I'm Ryan Block: I live in San Francisco and I (help) build things on the internet!">
     <meta name="viewport" content="width=device-width,
     initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/styles.css"></link>
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
@@ -36,9 +38,6 @@ module.exports = function pageBody (params) {
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <style type="text/css">
-      ${css}
-    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
