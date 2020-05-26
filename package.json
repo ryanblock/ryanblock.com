@@ -1,6 +1,6 @@
 {
   "name": "ryanblock.com",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "./scripts/static-site-generator",
     "lint": "eslint . --fix",
