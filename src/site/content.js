@@ -8,9 +8,9 @@ module.exports = /*html*/
 </div>
 <div>
   <h2>Anyway</h2>
-  <p>→ <strong><a href="https://begin.com">🌅Begin</a></strong></p>
+  <p>→ <strong><a href="https://begin.com">🌅 Begin</a></strong></p>
   <p>→ <a href="https://github.com/ryanblock">GitHub</a></p>
   <p>→ <a href="https://medium.com/@ryan">Medium</a></p>
-  <p>→ <a href="https://twitter.com/ryan" target="_blank">Twitter</a></p>
+  <p>→ <a href="https://mastodon.social/@ryan" rel="me">Mastodon</a></p>
   <p>→ <a href="https://www.linkedin.com/in/ryanblock">Work stuff</a></p>
 </div>`
