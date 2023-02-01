@@ -1,7 +1,7 @@
 module.exports = function pageBody (params) {
   let { content, scripts } = params
 
-  return /*html*/`<!doctype html>
+  return /* html */`<!doctype html>
 <html class="no-js" lang="en">
   <head>
 

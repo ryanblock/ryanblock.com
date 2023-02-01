@@ -1,4 +1,4 @@
-module.exports = /*html*/
+module.exports = /* html */
 `<div>
   <h1>👋🏻 Hi! I'm Ryan.</h1>
   <h2>I live in San Francisco and I (help) build things on the internet! 🌈</h2>
