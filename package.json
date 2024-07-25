@@ -7,9 +7,9 @@
     "start": "npx arc sandbox"
   },
   "devDependencies": {
-    "@architect/architect": "^10.10.0",
+    "@architect/architect": "^11.1.0",
     "@ryanblock/eslint-config": "^1.1.1",
-    "clean-css": "^5.3.2",
+    "clean-css": "^5.3.3",
     "eslint": "^8.33.0"
   },
   "eslintConfig": {
