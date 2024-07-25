@@ -2,18 +2,14 @@
 
 let { writeFileSync } = require('fs')
 let { join } = require('path')
+let page = require('../src/site/page')
 
-let page =    require('../src/site/page')
-let content = require('../src/site/content')
-let css =     require('../src/site/css')
-let scripts = require('../src/site/scripts')
-
-function writeTheWholeEntireWebPage() {
+function writeTheWholeEntireWebPage () {
+  let start = Date.now()
   // lol
-  let theWholeEntireWebPage = page({ content, scripts})
+  let theWholeEntireWebPage = page()
   writeFileSync(join(__dirname, '..', 'public', 'index.html'), theWholeEntireWebPage)
-  writeFileSync(join(__dirname, '..', 'public', 'styles.css'), css)
-  console.log(`Built site!`)
+  console.log(`Built site in ${Date.now() - start}ms`)
 }
 writeTheWholeEntireWebPage()
 

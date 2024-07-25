@@ -1,5 +1,12 @@
+let { readFileSync } = require('fs')
+let { join } = require('node:path')
+let cleanCSS = require('clean-css')
+
 module.exports = function pageBody (params) {
-  let { content, scripts } = params
+  let content = readFileSync(join(__dirname, 'content.html'))
+  let scripts = readFileSync(join(__dirname, 'scripts.html'))
+  let rawStyles = readFileSync(join(__dirname, 'styles.css'))
+  let { styles } = new cleanCSS().minify(rawStyles)
 
   return /* html */`<!doctype html>
 <html class="no-js" lang="en">
@@ -12,7 +19,9 @@ module.exports = function pageBody (params) {
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="/styles.css"></link>
+    <style>
+      ${styles}
+    </style>
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
