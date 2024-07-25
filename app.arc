@@ -2,6 +2,8 @@
 personal-site
 
 @static
+prune true
+
 @http
 get /robots.txt
 
