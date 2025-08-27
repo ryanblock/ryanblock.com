@@ -4,21 +4,21 @@ exports.handler = async function route () {
   if (env === 'production') {
     return {
       headers: {
-        'content-type': 'text/plain; charset=utf8'
+        'content-type': 'text/plain; charset=utf8',
       },
       body:
 `User-agent: *
-Disallow: `
+Disallow: `,
     }
   }
   else {
     return {
       headers: {
-        'content-type': 'text/plain; charset=utf8'
+        'content-type': 'text/plain; charset=utf8',
       },
       body:
 `User-agent: *
-Disallow: /`
+Disallow: /`,
     }
   }
 }
