@@ -9,6 +9,7 @@ get /robots.txt
 
 @plugins
 regen
+topos-route
 architect/plugin-storage-public
 
 @storage-public
