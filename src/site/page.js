@@ -2,7 +2,7 @@ let { readFileSync } = require('fs')
 let { join } = require('node:path')
 let cleanCSS = require('clean-css')
 
-module.exports = function pageBody (params) {
+module.exports = function pageBody (/* params */) {
   let content = readFileSync(join(__dirname, 'content.html'))
   let scripts = readFileSync(join(__dirname, 'scripts.html'))
   let rawStyles = readFileSync(join(__dirname, 'styles.css'))
