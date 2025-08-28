@@ -13,7 +13,7 @@ module.exports = function pageBody (/* params */) {
   <head>
 
     <title>Ryan Block</title>
-    <meta name="description" content="I'm Ryan Block: I live in San Francisco and I (help) build things on the internet!">
+    <meta name="description" content="I'm Ryan Block: I (help) build things on the internet!">
     <meta name="viewport" content="width=device-width,
     initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
