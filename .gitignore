@@ -5,3 +5,4 @@ node_modules
 public/index.html
 public/styles.css
 sam.*
+src/plugins/redirect-list.js
