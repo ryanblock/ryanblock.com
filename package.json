@@ -6,6 +6,9 @@
     "lint": "eslint . --fix",
     "start": "npx arc sandbox"
   },
+  "dependencies": {
+    "@architect/functions": "^8.1.9"
+  },
   "devDependencies": {
     "@architect/architect": "^11.3.0",
     "@architect/eslint-config": "^3.0.0",

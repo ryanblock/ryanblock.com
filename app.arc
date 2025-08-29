@@ -8,6 +8,11 @@ prune true
 get /robots.txt
 get /:code/:redir
 
+@tables
+redirects
+  id *string
+  ts **string
+
 @plugins
 regen
 topos-route
