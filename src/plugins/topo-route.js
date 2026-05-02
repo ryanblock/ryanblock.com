@@ -1,7 +1,7 @@
 module.exports = {
   deploy: {
     start: async ({ cloudformation }) => {
-      cloudformation.Resources.HTTP.Properties.DefinitionBody.paths['/topos/{proxy+}'] = {
+      cloudformation.Resources.HTTP.Properties.DefinitionBody.paths['/topo/{proxy+}'] = {
         get: {
           'x-amazon-apigateway-integration': {
             payloadFormatVersion: '1.0',

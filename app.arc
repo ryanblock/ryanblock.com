@@ -7,6 +7,7 @@ prune true
 @http
 get /robots.txt
 get /:code/:redir
+get /302/:redir
 
 @tables
 redirects
@@ -15,7 +16,7 @@ redirects
 
 @plugins
 regen
-topos-route
+topo-route # Load a static topo file via APIG
 redirects
 architect/plugin-storage-public
 
