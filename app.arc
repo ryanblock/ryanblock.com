@@ -6,7 +6,7 @@ prune true
 
 @http
 get /robots.txt
-get /:code/:redir
+get /topos/:name # Records req and redirects to S3 /topo/{proxy} (for now)
 get /302/:redir
 
 @tables
