@@ -1,15 +1,14 @@
 import arc from '@architect/functions'
 import { createHash } from 'node:crypto'
+let statusCode = 302
 
 export async function handler (params) {
   let redirects = JSON.parse(process.env.REDIRECTS)
-  let { code, redir } = params.pathParameters
-  let statusCode = Number(code)
+  let { redir } = params.pathParameters
 
-  let isRedir = [ 301, 302 ].includes(statusCode)
-  let Location = redirects?.[code]?.[redir]
+  let Location = redirects?.[redir]
 
-  if (isRedir && Location) {
+  if (Location) {
     try {
       let db = await arc.tables()
       let request = JSON.stringify(params.requestContext, null, 2)
@@ -26,12 +25,12 @@ export async function handler (params) {
     }
 
     return {
-      statusCode: statusCode,
+      statusCode,
       headers: { Location },
     }
   }
   return {
-    statusCode: 302,
+    statusCode,
     headers: { Location: '/' },
   }
 }
