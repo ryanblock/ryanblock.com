@@ -14,6 +14,9 @@ redirects
   id *string
   ts **string
 
+@tables-streams
+redirects
+
 @plugins
 regen
 topo-route # Load a static topo file via APIG
