@@ -1,6 +1,9 @@
 import useragent from 'useragent'
 
 const PUSHOVER_URL = 'https://api.pushover.net/1/messages.json'
+const names = {
+  wts: 'Welcome To Squamish',
+}
 
 export async function handler ({ Records = [] }) {
   for (let record of Records) {
@@ -25,6 +28,7 @@ async function notify (item) {
     return
   }
 
+  let name = names[item.name?.S] || 'the crag'
   let request = JSON.parse(item.request?.S || '{}')
   let ip = request?.http?.sourceIp || 'unknown'
   let ua = request?.http?.userAgent || ''
@@ -36,7 +40,7 @@ async function notify (item) {
   let brStr = [ agent.family, brVer ].filter(Boolean).join(' ') || 'Unknown browser'
 
   let message = [
-    'New visitor to the crag!',
+    `A climber is at ${name}!`,
     `- ${formatPT(item.ts?.S)}`,
     `- ${osStr} ${brStr}`,
     `- IP ${ip}`,
