@@ -2,7 +2,10 @@
 .tmp
 *legacy*
 node_modules
+preferences.arc
 public/index.html
 public/styles.css
 sam.*
 src/plugins/redirect-list.js
+test
+topos
